@@ -2,4 +2,4 @@ yarn install
 
 npx sb init
 
-npm run storybook
+yarn run storybook
