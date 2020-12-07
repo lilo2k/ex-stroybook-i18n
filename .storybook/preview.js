@@ -20,3 +20,13 @@ export const globalTypes = {
     },
   },
 };
+
+const localChanger=(Story,context)=>{
+  console.log(context.globals.locale);
+  // insert locale change here
+  return (
+    <Story {...context} />
+    )
+  }
+
+export const decorators = [localChanger];
